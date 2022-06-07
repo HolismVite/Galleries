@@ -1,5 +1,5 @@
 import CollectionsIcon from '@mui/icons-material/Collections';
-import { List, ImageGroup, Image, Text, ItemAction } from '@List'
+import { List, ImageGroup, Image, Text, EntityAction } from '@List'
 import UpsertGallery from './Upsert'
 
 const filters = <>
@@ -30,8 +30,8 @@ const row = (item) => <>
   </td>
 </>
 
-const itemActions = (item) => <>
-  <ItemAction
+const entityActions = (item) => <>
+  <EntityAction
     title='Manage images'
     icon={CollectionsIcon}
     goTo={`/media/images?entityType=${item.relatedItems.entityType}&entityGuid=${item.guid}`}
@@ -48,7 +48,7 @@ const Galleries = () => {
     upsert={UpsertGallery}
     hasEdit={true}
     hasDelete={true}
-    itemActions={itemActions}
+    entityActions={entityActions}
   />
 }
 
