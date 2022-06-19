@@ -1,4 +1,4 @@
-import { Form, Text, LongText } from '@Form'
+import { DialogForm, Text, LongText } from '@Form'
 
 const inputs = <>
     <Text
@@ -13,7 +13,7 @@ const inputs = <>
 </>
 
 const UpsertGallery = () => {
-    return <Form
+    return <DialogForm
         entityType='Gallery'
         inputs={inputs}
     />
