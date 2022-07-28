@@ -1,11 +1,11 @@
-import { DialogForm, Text, LongText } from '@Form'
+import {
+    DialogForm,
+    LongText,
+    Title,
+} from '@Form'
 
 const inputs = <>
-    <Text
-        column='Title'
-        placeholder='Title'
-        required='Please provide a title for the gallery'
-    />
+    <Title />
     <LongText
         column='Description'
         placeholder='Description'
