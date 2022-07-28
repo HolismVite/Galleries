@@ -1,5 +1,5 @@
 import CollectionsIcon from '@mui/icons-material/Collections';
-import { List, ImageGroup, Image, Text, EntityAction } from '@List'
+import { List, ImageGroup, Image, Text, EntityAction } from 'List'
 import UpsertGallery from './Upsert'
 
 const filters = <>

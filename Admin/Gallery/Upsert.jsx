@@ -2,7 +2,7 @@ import {
     DialogForm,
     LongText,
     Title,
-} from '@Form'
+} from 'Form'
 
 const inputs = <>
     <Title />
